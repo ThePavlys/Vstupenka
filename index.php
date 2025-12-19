@@ -5,7 +5,6 @@
   <title>Vstupenka pro Aničku</title>
   
   <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1h3i_MbUQWY-b4wSxKzWVb5jOceykdAZk/view">
-  //<meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1aH77SVFyS9DD2qP2so9A_EJinM7DXoH1/view">//
   
 </head>
 <body>
