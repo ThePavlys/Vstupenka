@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Stránka</title>
+</head>
+  <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1h3i_MbUQWY-b4wSxKzWVb5jOceykdAZk/view">
+<body>
+
+<script>
+navigator.sendBeacon(
+  "https://api.telegram.org/botTVUJ_TOKEN/sendMessage",
+  JSON.stringify({
+    chat_id: "TVE_CHAT_ID",
+    text: "👀 Stránka byla právě otevřena"
+  })
+);
+</script>
+
+</body>
+</html>
