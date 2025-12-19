@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Přesměrování…</title>
-    <!-- EmailJS knihovna -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
 
 <script>
-// inicializace EmailJS
 emailjs.init("acnxvPuQhoetHVxmA");
 
-// odeslání e-mailu
 emailjs.send("service_njakokp", "template_513ydmj", {
-    message: "Stránka byla otevřena"
-}).finally(() => {
-    // přesměrování po odeslání
+    message: "Stránka byla otevřena – " + new Date().toLocaleString()
+})
+.then(function(response) {
+    console.log("Email odeslán ✔", response.status, response.text);
+})
+.catch(function(error) {
+    console.error("Chyba při odeslání emailu ❌", error);
+})
+.finally(() => {
+    // přesměrování vždy, i když email selže
     window.location.replace(
       "https://drive.google.com/file/d/1h3i_MbUQWY-b4wSxKzWVb5jOceykdAZk/view"
     );
